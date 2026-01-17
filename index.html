@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website (fixed)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5262297c56.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pedjo.jpg" class="logo" alt="profile-picture">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()" aria-hidden="true"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" aria-hidden="true"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <br><span>Pejogana Mohamed Ouattara</span><br>I like coding and designing</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myPicture.jpg" alt="image about me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi,
+                       My name is Pedjogana Mohamed Ouattara.
+                       I am currently pursuing a Bachelors degree in Computer Science at KIIT University.
+                       This portfolio is a test project.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Student</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>DUNO</span><br>Worked as backend developer</li>
+                            <li><span>RERPSI</span><br>Worked as full-stack developer</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2025-Current</span><br>Bachelor in Computer Science<br>at KIIT (Deemed to be University), India</li>
+                            <li><span>2021-2023</span><br>High School Diploma <br>at Don Boxo Korhogo, Ivory Coast</li>
+                            <li><span>2016-2020</span><br>Middle School Certificate<br>at Lycée Félix Houphouët-Boigny (Senior High School), Korhogo, Ivory Coast</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <h2>Web Design</h2>
+                    <p>This portfolio is a personal space to display my projects, skills, and progress as a computer science student exploring web development and software engineering.</p>
+                    <a href="#" style="color: rgb(255, 93, 6); text-decoration: none; margin-top: 5px;">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple" aria-hidden="true"></i>
+                    <h2>Web App Design</h2>
+                    <p>I have not yet explored web application design in depth, but I am eager to learn and develop skills in this area. I am interested in understanding how web applications are structured, designed, and built, and I look forward to gaining hands-on experience in the future.</p>
+                    <a href="#" style="color: white; text-decoration: none; margin-top: 5px;">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store" aria-hidden="true"></i>
+                    <h2>App Design</h2>
+                    <p>I am interested in app design and eager to explore how mobile applications are planned, designed, and developed. Although I am still at the beginning of this journey, I am motivated to learn and build practical skills through future projects.</p>
+                    <a href="#" style="color: rgb(94, 250, 4); text-decoration: none; margin-top: 5px;">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="Social Media App">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>I want to explore how social media apps are built and how they connect users.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-6.jpg" alt="Videos and Music App">
+                    <div class="layer">
+                        <h3>Videos and Music App</h3>
+                        <p>I am curious about how video and music streaming applications work.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work5.jpg" alt="Online Shopping App">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>I want to learn how online shopping apps are designed and managed.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> pedjoganamohamedouattara@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> +91 8117850127</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                    </div>
+                    <a href="document.pdf" download class="btn btn2">Download File</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Pedjogana Mohamed Ouattara <i class="fa-solid fa-heart"></i>. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname, event){
+        for (var i = 0; i < tablinks.length; i++){
+            tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++){
+            tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxHf2-LlT8HQFxed90wW8JIuspKUl9V3VXn_huGwi-_rbv7rM0bQS88gM3UlrNUakLY/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function(){ msg.innerHTML = ""; }, 5000);
+            form.reset();
+            return response;
+          })
+          .catch(error => console.error('Error!', error.message));
+      });
+    </script>
+</body>
+</html>
